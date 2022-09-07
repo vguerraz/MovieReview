@@ -9,7 +9,7 @@ def home (request):
     #return render(request, 'home.html')
     #return render(request, 'home.html', {'name':'Valeria Guerra'})
     searchTerm = request.GET.get('searchMovie')
-    return render(request, 'home.html', {'searchterm':searchTerm})
+    return render(request, 'home.html', {'searchTerm':searchTerm})
 
 def about (request):
     return render(request, 'about.html')
